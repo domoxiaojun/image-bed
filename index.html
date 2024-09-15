@@ -113,12 +113,12 @@
             });
         });
         function setApiUrl() {
-            const encodedApiEndpoint = '{{API_ENDPOINT_BASE64}}'; // 将"您的Base64编码字符串"替换为实际的Base64编码后的API地址
+            const encodedApiEndpoint = 'aHR0cHM6Ly9pbWFnZS1iZWQuZG9tb3hpYW9qdW4ud29ya2Vycy5kZXY='; // 将"您的Base64编码字符串"替换为实际的Base64编码后的API地址
             const decodedApiEndpoint = atob(encodedApiEndpoint);
             document.getElementById('apiUrl').value = decodedApiEndpoint;
         }
         function setApiPassword() {
-            const encodedApiPassword = '{{API_PASSWORD_BASE64}}'; // 将这里替换为您的Base64编码后的API密码
+            const encodedApiPassword = 'MTIzNDU2'; // 将这里替换为您的Base64编码后的API密码
             const decodedApiPassword = atob(encodedApiPassword); // 使用atob函数解码Base64字符串
             document.getElementById('apiPassword').value = decodedApiPassword; // 设置解码后的密码到密码输入框
         }
